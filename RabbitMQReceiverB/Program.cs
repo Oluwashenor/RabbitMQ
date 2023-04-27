@@ -3,7 +3,7 @@ using RabbitMQ.Client.Events;
 using System.Text;
 
 ConnectionFactory factory = new();
-factory.Uri = new Uri(uriString: "amqps://eklshlub:oppXOpC8Aj49-27Q36SGGeMpuyvv8AJh@hawk.rmq.cloudamqp.com/eklshlub");
+factory.Uri = new Uri(uriString: "cloudamqp.com");
 factory.ClientProvidedName = "Rabbit Receiver B App";
 
 IConnection cnn = factory.CreateConnection();

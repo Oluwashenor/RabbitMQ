@@ -3,7 +3,7 @@ using System.Text;
 using System.Threading.Channels;
 
 ConnectionFactory factory = new();
-factory.Uri = new Uri(uriString: "amqps://eklshlub:oppXOpC8Aj49-27Q36SGGeMpuyvv8AJh@hawk.rmq.cloudamqp.com/eklshlub");
+factory.Uri = new Uri(uriString: "cloudamqp.com");
 factory.ClientProvidedName = "Rabbit Sender App";
 
 IConnection cnn = factory.CreateConnection();
